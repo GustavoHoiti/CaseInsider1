@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Líder n°1 em CX individualizado e entre canais - Insider</title>
+    <style>
+        /* Estilos CSS para a mensagem personalizada */
+        #nomeUsuario {
+            font-size: 40px;
+            color: #051235; /* Cor do texto */
+            font-family: Arial, sans-serif; /* Fonte */
+            text-align: center;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="logo-topo">
+            <img src="img/logo anuncio insider.jpg" id="announce-logo">
+            <p>Insider – Líder nº 1 no G2 Spring'24 em 6 categorias</p>
+        </nav>    
+    </header>
+    <div class="container">
+        <div class="box"><img src="img/image.png"></div>
+        <div class="box"><a href="#">Por que Insider</a></div>
+        <div class="box"><a href="#">Plataforma</a></div>
+        <div class="box"><a href="#">Soluções</a></div>
+        <div class="box"><a href="https://useinsider.com/pt/our-customers/"><p>Cliente</p></a></div>
+        <div class="box"><a href="#">Recursos</a></div>
+        <div class="box"><a href="#">A Insider</a></div>
+        <div class="box"><a href="https://useinsider.com/product-demo-hub/"> <p><b>Descubra a Insider</p></b></a></div>
+        <div class="box"><a href="index.html"><button class="botao-topo"><b>Atendimento Rápido</b></button></a></div>    
+        <div class="box"><a href="home.html">HOME</a></div>   
+        <div class="box-right">
+            <div class="box-right"><a href="https://inone.useinsider.com/login"><p>Login</p></a></div>
+            <div class="box-right"><a href="https://useinsider.com/pt/request-a-demo/"><button class="botao-topo"><p>Solicite uma demonstração</p></button></a></div>
+            <div class="box-right"><a href="#">Idioma</a></div>
+        </div>
+    </div>
+
+    <div id="nomeUsuario"></div>
+
+    <script>
+        // Função para obter o parâmetro da URL
+        function obterParametroURL(nomeParametro) {
+            var urlSearchParams = new URLSearchParams(window.location.search);
+            return urlSearchParams.get(nomeParametro);
+        }
+
+        // Obtém o nome do proprietário da URL
+        var nomeProprietario = obterParametroURL('owner_name');
+
+        // Exibe o nome na tela
+        var mensagem = 'Olá, ' + nomeProprietario + '! Recebemos o seu pedido.';
+        mensagem += '<br>Nossa equipe de suporte irá entrar em contato para alinhar os últimos detalhes!';
+        mensagem += '<br>A Insider agradece a sua confiança.';
+        document.getElementById('nomeUsuario').innerHTML = mensagem;
+
+
+    </script>

@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+}
+
+header {
+    margin-top: 0;
+    background-color: #8c8c8c1c;
+    width: 100%;
+    height: 130px;
+    display: flex;
+}
+
+.voltar-topo:hover {
+    background-color: #fbff79;
+    color: #051235;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    grid-gap: 0px 700px;
+    padding: 0px 10px;
+    position: static;
+}
+
+.voltar-topo {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #051236;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+#topo-img {
+    width: 160px;
+    position: static;
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    padding: 2em;
+    text-align: center;
+}
+
+.content form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    margin-right: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    width: auto;
+    background-color: #051235;
+    color: #fbff79;
+    border: none;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #fbff79;
+    color: #051235;
+}
+
+#footer.footer_re {
+    background-color: #dfe5eb;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer_logo_holder {
+    margin-bottom: 1em;
+}
+
+.footer_logo {
+    max-width: 150px; 
+}
+
+.footer_company_tagline {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #051235;
+    margin-bottom: 1em;
+}
+
+.form-columns-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    margin-right: 10px;
+}
+
+.actions {
+    margin-left: 10px;
+}
+
+
+
+.botao-enviar {
+    background-color: #051235;
+    color: #fbff79;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #fbff79;
+    color: #051235;
+}
+
+.footer_highlight_area a {
+    font-size: 1em;
+    font-weight: bold;
+    color: #051235;
+    text-decoration: none;
+}
+
+.footer_highlight_area a:hover {
+    text-decoration: underline;
+}
+
+.footer_second_row {
+    margin-top: 1em;
+}
+
+.footer_menu_header {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #051235;
+    margin-bottom: 0.5em;
+}
+
+.footer_menu_item {
+    margin-bottom: 0.5em;
+}
+
+.footer_menu_item a {
+    font-size: 0.8em;
+    color: #051235;
+    text-decoration: none;
+}
+
+.footer_menu_item a:hover {
+    text-decoration: underline;
+}
+
+.policy_menu-container {
+    margin-top: 2em;
+}
+
+.policy_menu-container ul {
+    padding: 0;
+    list-style: none;
+}
+
+.policy_menu-container ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.policy_menu-container ul li:last-child {
+    margin-right: 0;
+}
+
+.policy_menu-container ul li a {
+    font-size: 0.8em;
+    color: #051235;
+    text-decoration: none;
+}
+
+.policy_menu-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_copyright_holder {
+    font-size: 0.8em;
+    color: #7a7a7a;
+    margin-top: 1em;
+}
+
+#mostrar-servicos {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #051236;
+    color: rgb(255, 251, 125);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#mostrar-servicos:hover {
+    background-color: #fbff79;
+    color: #051235;
+}
+
+.descricao-imagem {
+    display: block;
+    margin: 10px auto; 
+    max-width: 100%; 
+}
+
+.descricao-servico {
+    text-align: center; 
+    display: none;
+}
+
+.select-exemplo {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+
+.select-exemplo:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: gray;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+}
+
+.select-exemplo.selected:after {
+    display: block;
+}
